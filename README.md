@@ -20,4 +20,16 @@ $ rails server
 ```
 *CTRL+C to quit the server*
 
+## Running the Tests
 
+To run the RSpec tests for the app, type the following command into the terminal:
+
+```
+$ rspec
+```
+
+To view the test coverage (using SimpleCov), open the index.html file from the terminal as follows:
+
+```
+$ open coverage/index.html
+```
