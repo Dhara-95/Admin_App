@@ -1,19 +1,24 @@
 # Admin App
 
-An app to keep track of all volunteers for a chairty - testing of the [Administrate](https://github.com/thoughtbot/administrate) gem. 
+This web app is a demo of the [Administrate](https://github.com/thoughtbot/administrate) dashboard interface, which aims to help a charity keep track of all their clients and volunteers in one place. 
 
-## Set-up Instructions
+## Installation Instructions
 
 First clone this repository and navigate to the correct directory: 
 
 ```
 $ git clone git@github.com:Dhara-95/Admin_App.git
 $ cd Admin_App
+$ bundle install
+$ rails db:create
+$ rails db:migrate
 ```
 
 ## Running the App
 
-To view the Rails app, run the following command in the terminal and go to http://localhost:3000/ in your web browser. If you would like to view the app using the [Administrate](https://github.com/thoughtbot/administrate) dashboard, navigate to http://localhost:3000/admin in your web browser. 
+To view the Rails app, run the following command in the terminal and go to http://localhost:3000/ in your web browser. 
+
+If you would like to view the app using the [Administrate](https://github.com/thoughtbot/administrate) dashboard, navigate to http://localhost:3000/admin in your web browser. 
 
 ```
 $ rails server
