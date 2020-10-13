@@ -13,6 +13,19 @@ class VolunteerDashboard < Administrate::BaseDashboard
     email: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    address: Field::String,
+    date: Field::Date,
+    interviewer_name: Field::String,
+    charity_log_num: Field::Number,
+    gender: Field::String,
+    smoking: Field::Boolean,
+    pets: Field::Boolean,
+    stairs: Field::Boolean,
+    lifts: Field::Boolean,
+    wheelchair_access: Field::Boolean,
+    availability: Field::Text,
+    age_pref: Field::String,
+    interests_skills: Field::Text,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,7 +37,18 @@ class VolunteerDashboard < Administrate::BaseDashboard
   id
   name
   email
-  created_at
+  date
+  interviewer_name
+  charity_log_num
+  gender
+  smoking
+  pets
+  stairs
+  lifts
+  wheelchair_access
+  availability
+  age_pref
+  interests_skills
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -35,6 +59,19 @@ class VolunteerDashboard < Administrate::BaseDashboard
   email
   created_at
   updated_at
+  address
+  date
+  interviewer_name
+  charity_log_num
+  gender
+  smoking
+  pets
+  stairs
+  lifts
+  wheelchair_access
+  availability
+  age_pref
+  interests_skills
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -43,6 +80,19 @@ class VolunteerDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
   name
   email
+  address
+  date
+  interviewer_name
+  charity_log_num
+  gender
+  smoking
+  pets
+  stairs
+  lifts
+  wheelchair_access
+  availability
+  age_pref
+  interests_skills
   ].freeze
 
   # COLLECTION_FILTERS
@@ -52,10 +102,10 @@ class VolunteerDashboard < Administrate::BaseDashboard
   # For example to add an option to search for open resources by typing "open:"
   # in the search field:
   #
-  #   COLLECTION_FILTERS = {
-  #     open: ->(resources) { resources.where(open: true) }
-  #   }.freeze
-  COLLECTION_FILTERS = {}.freeze
+    COLLECTION_FILTERS = {
+      open: ->(resources) { resources.where(open: true) }
+    }.freeze
+  # COLLECTION_FILTERS = {}.freeze
 
   # Overwrite this method to customize how volunteers are displayed
   # across all pages of the admin dashboard.

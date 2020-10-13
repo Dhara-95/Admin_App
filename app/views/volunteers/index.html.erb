@@ -3,18 +3,44 @@
 
 
 <%= link_to 'New volunteer', new_volunteer_path %>
- 
+
 <table>
   <tr>
     <th>Name</th>
     <th>Email</th>
+    <th>Interview Date</th>
+    <th>Interviewer</th>
+    <th>Charity Log Number</th>
+    <th>Gender Pref</th>
+    <th>Smoking ok?</th>
+    <th>Pets ok?</th> //clarify the preference fields
+    <th>Stairs ok?</th>
+    <th>Need lift access?</th>
+    <th>Need wheelchair access?</th>
+    <th>Age Preference</th>
+
+    <th>Interests and Skills</th>
+
+
     <th></th>
   </tr>
- 
+
   <% @volunteers.each do |volunteer| %>
     <tr>
       <td><%= volunteer.name %></td>
       <td><%= volunteer.email %></td>
+      <td><%= volunteer.date %></td>
+      <td><%= volunteer.interviewer_name %></td>
+      <td><%= volunteer.charity_log_num %></td>
+      <td><%= volunteer.gender %></td>
+      <td><%= volunteer.smoking %></td>
+      <td><%= volunteer.pets %></td>
+      <td><%= volunteer.stairs %></td>
+      <td><%= volunteer.lifts %></td>
+      <td><%= volunteer.wheelchair_access %></td>
+      <td><%= volunteer.availability %></td>
+      <td><%= volunteer.age_pref %></td>
+      <td><%= volunteer.interests_skills %></td>
       <td><%= link_to 'Show', volunteer_path(volunteer) %></td>
     </tr>
   <% end %>
