@@ -23,9 +23,9 @@ class VolunteerDashboard < Administrate::BaseDashboard
     stairs: Field::Boolean,
     lifts: Field::Boolean,
     wheelchair_access: Field::Boolean,
-    availability: Field::Text,
+    availability: Field::String,
     age_pref: Field::String,
-    interests_skills: Field::Text,
+    interests_skills: Field::Text.with_options(searchable: true)
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -103,7 +103,8 @@ class VolunteerDashboard < Administrate::BaseDashboard
   # in the search field:
   #
     COLLECTION_FILTERS = {
-      open: ->(resources) { resources.where(open: true) }
+
+      # open: ->(resources) { resources.where(open: true) }
     }.freeze
   # COLLECTION_FILTERS = {}.freeze
 
