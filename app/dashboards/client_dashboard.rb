@@ -41,8 +41,7 @@ class ClientDashboard < Administrate::BaseDashboard
     further_info: Field::Text,
     date: Field::Date,
     signed: Field::String,
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    volunteer_name: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -84,8 +83,7 @@ class ClientDashboard < Administrate::BaseDashboard
   further_info
   date
   signed
-  created_at
-  updated_at
+  volunteer_name
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -124,8 +122,7 @@ class ClientDashboard < Administrate::BaseDashboard
   further_info
   date
   signed
-  created_at
-  updated_at
+  volunteer_name
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -164,6 +161,7 @@ class ClientDashboard < Administrate::BaseDashboard
   further_info
   date
   signed
+  volunteer_name
   ].freeze
 
   # COLLECTION_FILTERS
