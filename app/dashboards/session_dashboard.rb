@@ -27,6 +27,7 @@ class SessionDashboard < Administrate::BaseDashboard
   client_name
   volunteer_name
   date
+  summary
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
