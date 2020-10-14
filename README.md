@@ -38,3 +38,12 @@ To view the test coverage (using SimpleCov), open the index.html file from the t
 ```
 $ open coverage/index.html
 ```
+
+## Contributors
+
+- [Dhara Patel](https://github.com/Dhara-95)
+- [Katie Jones](https://github.com/katieljones)
+- [India Rex](https://github.com/indisaurusrex)
+- [Ilja Gonciarov](https://github.com/Gonciarov)
+
+
