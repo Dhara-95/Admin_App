@@ -25,7 +25,8 @@ class VolunteerDashboard < Administrate::BaseDashboard
     wheelchair_access: Field::Boolean,
     availability: Field::String,
     age_pref: Field::String,
-    interests_skills: Field::Text.with_options(searchable: true)
+    interests_skills: Field::Text.with_options(searchable: true),
+    client_name: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -49,6 +50,7 @@ class VolunteerDashboard < Administrate::BaseDashboard
   availability
   age_pref
   interests_skills
+  client_name
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -72,6 +74,7 @@ class VolunteerDashboard < Administrate::BaseDashboard
   availability
   age_pref
   interests_skills
+  client_name
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -93,6 +96,7 @@ class VolunteerDashboard < Administrate::BaseDashboard
   availability
   age_pref
   interests_skills
+  client_name
   ].freeze
 
   # COLLECTION_FILTERS

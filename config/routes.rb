@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :admin do
-      resources :volunteers
-      resources :sessions
+      resources :volunteers, :clients, :sessions
+
       root to: "volunteers#index"
     end
 
