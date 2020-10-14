@@ -5,7 +5,7 @@ class CreateSessions < ActiveRecord::Migration[6.0]
       t.string :volunteer_name
       t.date :date
       t.text :summary
-
+      t.references :volunteer
       t.timestamps
     end
   end
