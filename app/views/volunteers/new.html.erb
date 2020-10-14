@@ -71,6 +71,11 @@
   </p>
 
   <p>
+    <%= f.label :client %><br />
+    <%= f.collection_select :client_id, @clients, :id, :forename, :surname, :prompt => "Select a client" %>
+  </p>
+
+  <p>
     <%= form.submit %>
   </p>
 <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_14_092843) do
+ActiveRecord::Schema.define(version: 2020_10_14_101743) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2020_10_14_092843) do
     t.string "age_pref"
     t.text "interests_skills"
     t.string "availability"
+    t.string "client_name"
   end
 
 end
